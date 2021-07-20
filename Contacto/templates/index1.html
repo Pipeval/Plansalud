@@ -1,0 +1,341 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Cotizar plan de salud</title>
+    <!-- Iconos  -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="{% static '/css/carousel.css' %}" rel="stylesheet">
+  </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    
+<header>
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#myCarousel">Mejora tu plan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link btn btn-success active" aria-current="page" href="#nav_contacto">Cotizar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">¿Quienes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#nav_faq" tabindex="-1">Preguntas frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1">Noticias</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  
+<!-- Carousel -->
+  <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '/img/Slide01.jpg' %}" class="d-block w-100 w3-opacity " alt="">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        
+        <div class="container">
+          <div class="carousel-caption text-end text-white">  
+            <h1>¿Buscas el mejor plan de salud? Estas en el lugar correcto </h1>
+            <p class="font-weight-bolder">Tenemos asesoria profesional de salud gratuita para ti</p>
+            <p><a class="btn btn-lg btn-primary" href="#nav_contacto">Cotizar</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/img/Slide02.jpg' %}" class="d-block w-100 w3-opacity-min" alt="">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-white">
+            <h1>Todos los planes y todas las isapres de Chile en un solo lugar</h1>
+            <p class="font-weight-bold">Contrata tu plan de salud hoy, sin distancias ni papeles</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="{% static '/img/Slide03.jpg' %}" class="d-block w-100 w3-opacity-min" alt="">
+        <div class="container">
+          <div class="carousel-caption text-start text-white">
+            <h1>Las mejores coberturas y beneficios para toda la familia</h1>
+            <p class="font-weight-bold">Seguro de cesantia, cobertura odontologica, telemedicina y mucho mas</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Beneficios</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <!-- Ribbon isapres -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="{% static '/img/Logos/Banmedica.jpg' %}" class="d-block img-fluid mx-auto" >
+      </div>
+      <div class="col-md-2">
+        <img src="{% static '/img//Logos/Colmena.jpg' %}" class="d-block img-fluid mx-auto">
+      </div>
+      <div class="col-md-2">
+        <img src="{% static '/img//Logos/Consalud.jpg' %}" class="d-block img-fluid mx-auto">
+      </div>
+      <div class="col-md-2">
+        <img src="{% static '/img/Logos/Cruzblanca.jpg' %}" class="d-block img-fluid mx-auto">
+      </div>
+      <div class="col-md-2">
+        <img src="{% static '/img/Logos/masvida.jpg' %}" class="d-block img-fluid mx-auto">
+      </div>
+      <div class="col-md-2">
+        <img src="{% static '/img/Logos/vidatres.jpg' %}" class="d-block img-fluid mx-auto">
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr class="featurette-divider" >
+  
+  <div class="container marketing">
+
+    <!-- Pasos Marketing-->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2>Llena el formulario</h2>
+        <p>Buscamos y comparamos los mejores planes de salud para ti entre todas las isapres  </p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2>Asesoria profesionales</h2>
+        <p>Te asignamos un ejecutivo que se contactara contigo para ayudarte a elegir el plan mas conveniente </p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2>Contrata</h2>
+        <p>Te guiamos y gestionamos la contratacion del contrato de manera gratuita</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <hr class="featurette-divider" id="nav_contacto">
+
+    <!-- Contacto -->
+    <div class="container-fluid bg-dark pt-3 pb-3 w-100 border border-secondary rounded border-3 shadow p-4 mb-4" id="contact_section">
+      <div class="row">
+        <div class="col-md-6">
+          <form method="POST" action="/index1/">{% csrf_token %}
+            <input type="text" class="form-control mb-2 mr-sm-2"  placeholder="Nombre completo" name="nombre_completo">
+            <input type="text" class="form-control mb-2 mr-sm-2"  placeholder="Telefono" name="telefono">
+            <input type="text" class="form-control mb-2 mr-sm-2"  placeholder="Correo Electronico" name="email">
+            <input type="text" class="form-control mb-2 mr-sm-2"  placeholder="Ingrese su renta aproximada" name="renta">
+            <select type="text" class="form-select mb-2 mr-sm-2"  placeholder="Ingrese prevision" name="prevision">
+              <option disabled selected>Ingrese su prevision</option>
+              <option value="Banmédica">Banmédica</option>
+              <option value="Consalud">Consalud</option>
+              <option value="Cruz Blanca">Cruz Blanca</option>
+              <option value="Nueva MasVida">Nueva MasVida</option>
+              <option value="Colmena">Colmena</option>
+              <option value="Vida Tres">Vida Tres</option>
+              <option value="Fonasa ">Fonasa</option><option value="Sin Previsión ">Sin Previsión</option>
+             </select>
+            <select type="text" class="form-select mb-2 mr-sm-2" placeholder="Ingrese Region" name="region" aria-placeholder="Ingrese  su Region">
+              <option disabled selected>Ingrese su region</option>
+              <option value="METROPOLITANA">METROPOLITANA</option>
+              <option value="TARAPACA">TARAPACA</option>
+              <option value="ANTOFAGASTA">ANTOFAGASTA</option>
+              <option value="ATACAMA">ATACAMA</option>
+              <option value="COQUIMBO">COQUIMBO</option>
+              <option value="VALPARAISO">VALPARAISO</option>
+              <option value="LIBERTADOR GRAL. B. OHIGGINS">LIBERTADOR GRAL. B. OHIGGINS</option>
+              <option value="MAULE">MAULE</option><option value="BIOBIO">BIOBIO</option>
+              <option value="ARAUCANIA">ARAUCANIA</option>
+              <option value="LOS LAGOS">LOS LAGOS</option>
+              <option value="AYSEN">AYSEN</option>
+              <option value="MAGALLANES Y ANTARTICA CHILENA">MAGALLANES Y ANTARTICA CHILENA</option>
+              <option value="DE LOS RIOS ">DE LOS RIOS</option>
+              <option value="ARICA Y PARINACOTA">ARICA Y PARINACOTA</option>
+              <option value="ÑUBLE">ÑUBLE</option>
+              <option value="METROPOLITANA">METROPOLITANA</option> </select>
+
+              <select class="form-select" name="cargas" aria-label="Ingrese cantidad de cargas">
+                <option disabled selected>Ingrese cantidad de cargas</option>
+                <option value="1">1 carga</option>
+                <option value="2">2 cargas </option>
+                <option value="3 o mas">3 o mas cargas</option>
+              </select>
+              <div class="pt-3">
+              <center><button type="submit" class="btn btn-primary">Cotizar  <i class="fa fa-paper-plane"></i> </button> </center>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 text-warning ">
+          <div class="container pt-2">
+         <center> <i class="fa fa-volume-control-phone " style="font-size:48px;color:white"></i>
+          <h4> Te llamamos en menos de 24 horas</h4></center>
+        
+        </div>
+        <div class="container pt-3">
+         <center> <i class="fa fa-desktop" style="font-size:48px;color:white"></i>
+          <h4> Es totalmente gratuito y 100% online</h4></center>
+        </div>
+          <div class="container pt-3">
+          <center><i class="fa fa-percent" style="font-size:48px;color:white"></i>
+          <h4> Ahorra hasta un 40% en tu plan de salud</h4></center>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+
+     <!-- Primera info -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Contrata desde tu casa</h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{% static '/img/Principal.png' %}" class="d-block img-fluid mx-auto" width="500" height="500"> 
+      </div>
+    </div>
+
+    <hr class="featurette-divider" id="nav_faq" >
+    <center><h1>Preguntas frecuentes(FAQ)</h1></center>
+    <br>
+    <!-- FAQ  / accordion-->
+    <div class="row featurette">
+      
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <strong>¿Fonasa o Isapre?</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Fonasa es la prevision de salud publica e isapre es previsión privada</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>¿En que debo fijarme a la hora de elegir un plan de salud?</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>¿Cual es la funcion de la Superintendencia de Salud?</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>¿Donde debo acudir en caso de reclamos?</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>El compin es la clave</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+   
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-dark">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; Mejora tu plan  &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+    <script src="{% static '/js/bootstrap.bundle.min.js' %}"></script>
+  
+  </body>
+
+  </html>
