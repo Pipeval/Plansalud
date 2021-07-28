@@ -1,0 +1,1 @@
+web: gunicorn Plansalud.wsgi --log-file -
